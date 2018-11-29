@@ -22,7 +22,7 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
-
+/* This affects the body and sets the display type to flex also includes the webkit extension. This also sets the flow of the content to a row and makes it wrap to the next line. */
 body {
     display: -webkit-flex;
     display: flex;
@@ -30,21 +30,25 @@ body {
     flex-flow: row wrap;
 }
 
+/* This affects the section element that has the id of sheet and sets the growth rate to and the shrink to 1 with a basis size of 301px */
 section#sheet {
     -webkit-flex: 3 1 301px;
     flex: 3 1 301px;
 }
 
+/* This affects the article element and makes the growth rate 1 and the shrink rate 3 with a basis size of 180px */
 article {
     -webkit-flex: 1 3 180px;
     flex: 1 3 180px;
 }
 
+/* This affects the footer thats nested in the footer and makes the order 100 so that appears after evreything. */
 body>footer {
     -webkit-order: 100;
     order: 100;
 }
 
+/* This affects the list items in the unordered list in the horizontal nav and makes the growth and shrink rate 1 and sets the basis size to auto.  */
 nav.horizontal ul li {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -54,11 +58,15 @@ nav.horizontal ul li {
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
+/* This is a media querie that only affects the content when the screen has a max-widht of 480px */
 @media only screen and (max-width: 480px) {
+
+    /* affects the img with the class of panel and sets the width of 100% */
     img.panel {
         width: 100%;
     }
 
+    /* This affects the horizontal nav and sets the order to 99 so it appear second to last */
     nav.horizontal {
         -webkit-order: 99;
         order: 99;
@@ -69,8 +77,10 @@ nav.horizontal ul li {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
-
+/* This is the media quearie that affects the screen whenever it has a min width of 480 pixels. */
 @media only screen and (min-width: 480px) {
+
+    /* This affects the horizontal nav with the unordered list and sets the display to flex box and the flow to row with nowrap also makes the height of 40px */
     nav.horizontal ul {
         display: -webkit-flex;
         display: flex;
@@ -79,18 +89,22 @@ nav.horizontal ul li {
         height: 40px;
     }
 
+    /* This affects the image with this class and makes the width a certain size depending on how large the image should apppear to the user. */
     img.size1 {
         width: 100%;
     }
 
+    /* This affects the image with this class and makes the width a certain size depending on how large the image should apppear to the user. */
     img.size2 {
         width: 60%;
     }
 
+    /* This affects the image with this class and makes the width a certain size depending on how large the image should apppear to the user. */
     img.size3 {
         width: 40%;
     }
 
+    /* This affects the image with this class and makes the width a certain size depending on how large the image should apppear to the user. */
     img.size4 {
         width: 30%;
     }

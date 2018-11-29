@@ -17,6 +17,7 @@
 
 
 /* Hidden Objects */
+/* This hides the nav, footer and article from the printer so that when its printed they dont show up. */
 nav,
 footer,
 article {
@@ -24,24 +25,28 @@ article {
 }
 
 /* Comic Book Sheet Styles */
-
+/* This affects the section element with the id of sheet and makes the width 6in and sets the top and bottom margins to 0 and the right and left to auto so that the page centers. */
 section#sheet {
     width: 6in;
     margin: 0in auto
 }
 
+/* This affects the image with this class and makes the width a certain size depending on how large the image should apppear to the user. */
 img.size1 {
     width: 5in;
 }
 
+/* This affects the image with this class and makes the width a certain size depending on how large the image should apppear to the user. */
 img.size2 {
     width: 3in;
 }
 
+/* This affects the image with this class and makes the width a certain size depending on how large the image should apppear to the user. */
 img.size3 {
     width: 2in;
 }
 
+/* This affects the image with this class and makes the width a certain size depending on how large the image should apppear to the user. */
 img.size4 {
     width: 1.5in;
 }
